@@ -11,6 +11,12 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+	<c:if test="${ not empty empresa}">
+		Empresa ${empresa} cadastrada com sucesso! <br/> 
+		Data de abertura: <fmt:formatDate value="${data }" pattern="dd/MM/yyyy" /> <br/>
+	</c:if><br/>
+
 	Lista de empresas: <br/>
 	
 	<ul>
