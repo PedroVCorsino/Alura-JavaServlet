@@ -21,12 +21,11 @@ public class Empresa {
 		this.nome = nome;
 	}
 	
-	public Date getDataAbertura() {
-		return dataAbertura;
-	}
-	
 	public void setDataAbertura(Date dataAbertura) {
 		this.dataAbertura = dataAbertura;
 	}
 	
+	public Date getDataAbertura() {
+		return dataAbertura;
+	}
 }
