@@ -9,7 +9,12 @@
 Meus exercícios na formação Spring Framework da Alura.
 
 Cursos concluidos até o momento:
-  Java Servlet: Fundamentos da programação web Java,
-  Java Servlet: Autenticação, autorização e o padrão MVC.
-  
+
+<ul>
+  <li>Java Servlet: Fundamentos da programação web Java,</li>
+  <li>Java Servlet: Fundamentos da programação web Java,</li>
+  <li>Java Servlet: Autenticação, autorização e o padrão MVC,</li>
+  <li>Maven: Gerenciamento de dependências e build de aplicações Java.</li>
+</ul>  
+
   Mais em breve...
