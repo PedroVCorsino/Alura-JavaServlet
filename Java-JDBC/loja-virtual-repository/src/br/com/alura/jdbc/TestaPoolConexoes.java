@@ -1,19 +1,19 @@
 package br.com.alura.jdbc;
-import java.sql.Connection;
+
 import java.sql.SQLException;
 
 import br.com.alura.jdbc.factory.ConnectionFactory;
 
-public class TestaConexao {
+public class TestaPoolConexoes {
 
 	public static void main(String[] args) throws SQLException {
 
 		ConnectionFactory connectionFactory = new ConnectionFactory();
-		Connection connection = connectionFactory.recuperarConexao();
 
-		System.out.println("Fechando conexão!!");
+		for (int i = 0; i < 20; i++) {
+			connectionFactory.recuperarConexao();
+			System.out.println("Conexão de número: " +i);
+		}
 
-		connection.close();
 	}
-
 }
