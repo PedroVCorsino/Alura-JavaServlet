@@ -12,7 +12,6 @@ Cursos concluidos até o momento:
 
 <ul>
   <li>Java Servlet: Fundamentos da programação web Java,</li>
-  <li>Java Servlet: Fundamentos da programação web Java,</li>
   <li>Java Servlet: Autenticação, autorização e o padrão MVC,</li>
   <li>Maven: Gerenciamento de dependências e build de aplicações Java,</li>
   <li>Java e JDBC: Trabalhando com um banco de dados.</li>
