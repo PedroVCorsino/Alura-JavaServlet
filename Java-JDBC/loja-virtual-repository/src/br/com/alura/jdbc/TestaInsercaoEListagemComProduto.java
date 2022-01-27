@@ -18,6 +18,6 @@ public class TestaInsercaoEListagemComProduto {
 			produtoDao.salvar(comoda);
 			List<Produto> listaDeProdutos = produtoDao.listar();
 			listaDeProdutos.stream().forEach(lp -> System.out.println(lp));
-		}
+		} 
 	}
 }
