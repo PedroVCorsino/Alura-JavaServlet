@@ -8,8 +8,8 @@
         <properties>    
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" /> <!-- DB Driver -->
             <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/loja" /> <!-- BD Mane -->
-            <property name="javax.persistence.jdbc.user" value="pedro"/>
-	        <property name="javax.persistence.jdbc.password" value="123456" /> <!-- DB Password -->
+            <property name="hibernate.connection.username" value="postgres" />
+            <property name="hibernate.connection.password" value="pedro" />
             
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/> <!-- DB Dialect -->
             <property name="hibernate.hbm2ddl.auto" value="update" /> <!-- create / create-drop / update -->
