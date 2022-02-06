@@ -17,8 +17,11 @@ public class CadastroDeProdutos {
         celular.setPreco(new BigDecimal("999.99"));
 
         EntityManagerFactory factory = Persistence.createEntityManagerFactory("loja");
-
+        
         EntityManager em = factory.createEntityManager();
+        
+        em.getTransaction().begin(); // inicia a transação
         em.persist(celular);
+        em.getTransaction().commit(); // finaliza a transação
     }
 }
