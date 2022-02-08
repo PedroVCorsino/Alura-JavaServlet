@@ -16,4 +16,12 @@ public class CategoriaDao {
         this.em.persist(categoria);
     }
 
+    public void atualizar(Categoria categoria) {
+        this.em.merge(categoria);
+    }
+
+    public void remover(Categoria categoria) {
+        categoria = em.merge(categoria); // Garante que a entity não esta detached
+        this.em.remove(categoria);
+    }
 }
