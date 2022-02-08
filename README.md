@@ -17,5 +17,6 @@ Cursos concluidos até o momento:
   <li>Java e JDBC: Trabalhando com um banco de dados.</li>
   <li>Persistência com JPA: Introdução ao Hibernate.</li
 </ul>  
-
-  Mais em breve...
+</br>
+  
+Mais em breve...
