@@ -1,5 +1,8 @@
 package br.com.alura.loja.dao;
 
+import java.math.BigDecimal;
+import java.util.List;
+
 import javax.persistence.EntityManager;
 
 import br.com.alura.loja.modelo.Produto;
@@ -16,4 +19,43 @@ public class ProdutoDao {
         this.em.persist(produto);
     }
 
+
+    public void atualizar(Produto produto) {
+        this.em.merge(produto);
+    }
+
+    public void remover(Produto produto) {
+        produto = em.merge(produto); // Garante que a entity não esta detached
+        this.em.remove(produto);
+    }
+    
+    public Produto buscarPorID(Long id) {
+        return this.em.find(Produto.class, id);
+    }
+
+    public List<Produto> buscarTodos() {
+        String jpql = "select p from Produto p";
+        return this.em.createQuery(jpql, Produto.class).getResultList();
+    }
+
+    public List<Produto> buscarPorNome(String nome) {
+        String jpql = "select p from Produto p where p.nome = :nome";
+        return this.em.createQuery(jpql, Produto.class)
+            .setParameter("nome", nome)    
+            .getResultList();
+    }
+
+    public List<Produto> buscarPorNomeDaCategoria(String nome) {
+        String jpql = "select p from Produto p where p.categoria.nome = :nome";
+        return this.em.createQuery(jpql, Produto.class)
+            .setParameter("nome", nome)    
+            .getResultList();
+    }
+
+    public BigDecimal buscarPrecoDoProdutoComNome(String nome) {
+        String jpql = "select p.preco from Produto p where p.nome = :nome";
+        return this.em.createQuery(jpql, BigDecimal.class)
+            .setParameter("nome", nome)    
+            .getSingleResult();
+    }
 }
