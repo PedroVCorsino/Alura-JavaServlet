@@ -1,8 +1,11 @@
+/home/pedro/Pedro/cursos/Alura/Alura-Spring-Framework/JPA-Hibernate/loja/src/main/java/br/com/alura/loja/modelo/Pedido.java
 /home/pedro/Pedro/cursos/Alura/Alura-Spring-Framework/JPA-Hibernate/loja/src/main/java/br/com/alura/loja/testes/CadastroDeProdutos.java
+/home/pedro/Pedro/cursos/Alura/Alura-Spring-Framework/JPA-Hibernate/loja/src/main/java/br/com/alura/loja/modelo/ItemPedido.java
 /home/pedro/Pedro/cursos/Alura/Alura-Spring-Framework/JPA-Hibernate/loja/src/main/java/br/com/alura/loja/testes/teste.java
 /home/pedro/Pedro/cursos/Alura/Alura-Spring-Framework/JPA-Hibernate/loja/src/main/java/br/com/alura/loja/dao/ProdutoDao.java
 /home/pedro/Pedro/cursos/Alura/Alura-Spring-Framework/JPA-Hibernate/loja/src/main/java/br/com/alura/loja/modelo/Categoria.java
 /home/pedro/Pedro/cursos/Alura/Alura-Spring-Framework/JPA-Hibernate/loja/src/main/java/br/com/alura/App.java
+/home/pedro/Pedro/cursos/Alura/Alura-Spring-Framework/JPA-Hibernate/loja/src/main/java/br/com/alura/loja/modelo/Cliente.java
 /home/pedro/Pedro/cursos/Alura/Alura-Spring-Framework/JPA-Hibernate/loja/src/main/java/br/com/alura/loja/util/JPAUtil.java
 /home/pedro/Pedro/cursos/Alura/Alura-Spring-Framework/JPA-Hibernate/loja/src/main/java/br/com/alura/loja/modelo/Produto.java
 /home/pedro/Pedro/cursos/Alura/Alura-Spring-Framework/JPA-Hibernate/loja/src/main/java/br/com/alura/loja/dao/CategoriaDao.java

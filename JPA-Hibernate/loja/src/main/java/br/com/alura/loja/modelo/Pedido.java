@@ -2,6 +2,7 @@ package br.com.alura.loja.modelo;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -25,13 +26,18 @@ public class Pedido {
     @ManyToOne
     private Cliente cliente;
 
-    @OneToMany
-    private List<ItemPedido> itensPedido;
+    @OneToMany(mappedBy = "pedido") // Relacionamento bidirecional
+    private List<ItemPedido> itensPedido = new ArrayList<>();
 
     public Pedido() {} // Construtor vazio para o JPA
 
     public Pedido(Cliente cliente) {
         this.cliente = cliente;
+    }
+
+    public void adicionaItem(ItemPedido itemPedido) { //Recomendado em relacionamentos bidirecionais
+        this.itensPedido.add(itemPedido); // Adiciona o item a lista de itens do pedido
+        itemPedido.setPedido(this); // Seta o pedido do item
     }
 
     public BigDecimal getValorTotal() {
