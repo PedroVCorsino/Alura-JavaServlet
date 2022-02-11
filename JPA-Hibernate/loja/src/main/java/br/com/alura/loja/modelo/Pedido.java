@@ -18,55 +18,63 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "pedidos")
 public class Pedido {
-    
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    @Column(name = "valor_total")
-    private BigDecimal valorTotal;
-    private LocalDate data = LocalDate.now();
 
-    @ManyToOne
-    private Cliente cliente;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	@Column(name = "valor_total")
+	private BigDecimal valorTotal = BigDecimal.ZERO;
+	private LocalDate data = LocalDate.now();
 
-    @OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL) // Relacionamento bidirecional
-    private List<ItemPedido> itensPedido = new ArrayList<>();
+	@ManyToOne
+	private Cliente cliente;
+	
+	@OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL)
+	private List<ItemPedido> itens = new ArrayList<>();
 
-    public Pedido() {} // Construtor vazio para o JPA
+	public Pedido() {
+	}
 
-    public Pedido(Cliente cliente) {
-        this.cliente = cliente;
-    }
+	public Pedido(Cliente cliente) {
+		this.cliente = cliente;
+	}
+	
+	public void adicionarItem(ItemPedido item) {
+		item.setPedido(this);
+		this.itens.add(item);
+		this.valorTotal = this.valorTotal.add(item.getValor());
+	}
 
-    public void adicionaItem(ItemPedido itemPedido) { //Recomendado em relacionamentos bidirecionais
-        this.itensPedido.add(itemPedido); // Adiciona o item a lista de itens do pedido
-        itemPedido.setPedido(this); // Seta o pedido do item
-    }
+	public Long getId() {
+		return id;
+	}
 
-    public BigDecimal getValorTotal() {
-        return valorTotal;
-    }
+	public void setId(Long id) {
+		this.id = id;
+	}
 
-    public void setValorTotal(BigDecimal valorTotal) {
-        this.valorTotal = valorTotal;
-    }
+	public BigDecimal getValorTotal() {
+		return valorTotal;
+	}
 
-    public LocalDate getData() {
-        return data;
-    }
+	public void setValorTotal(BigDecimal valorTotal) {
+		this.valorTotal = valorTotal;
+	}
 
-    public void setData() {
-        this.data = LocalDate.now();
-    }
+	public LocalDate getData() {
+		return data;
+	}
 
-    public Cliente getCliente() {
-        return cliente;
-    }
+	public void setData(LocalDate data) {
+		this.data = data;
+	}
 
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
+	public Cliente getCliente() {
+		return cliente;
+	}
 
-    
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
 
 }
