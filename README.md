@@ -14,8 +14,9 @@ Cursos concluidos até o momento:
   <li>Java Servlet: Fundamentos da programação web Java,</li>
   <li>Java Servlet: Autenticação, autorização e o padrão MVC,</li>
   <li>Maven: Gerenciamento de dependências e build de aplicações Java,</li>
-  <li>Java e JDBC: Trabalhando com um banco de dados.</li>
-  <li>Persistência com JPA: Introdução ao Hibernate.</li
+  <li>Java e JDBC: Trabalhando com um banco de dados,</li>
+  <li>Persistência com JPA: Introdução ao Hibernate,</li>
+  <li>Java e JPA: Consultas avançadas, performance e modelos complexos.</li>
 </ul>  
 </br>
   
