@@ -1,0 +1,2 @@
+#!/bin/zsh
+. ./env && mvn spring-boot:run 
