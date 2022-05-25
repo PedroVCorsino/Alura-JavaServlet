@@ -6,9 +6,13 @@ import java.util.Date;
 
 import javax.annotation.Generated;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import br.com.alura.mvc.mudi.model.enums.StatusPedido;
 
 @Entity
 public class Pedido {
@@ -27,6 +31,9 @@ public class Pedido {
     private String urlImagem;
 
     private String descricao;
+
+    @Enumerated(EnumType.STRING)
+    private StatusPedido status;
 
     public String getNomeProduto() {
         return nomeProduto;
@@ -76,6 +83,12 @@ public class Pedido {
         this.descricao = descricao;
     }
 
+    public StatusPedido getStatus() {
+        return status;
+    }
 
+    public void setStatus(StatusPedido status) {
+        this.status = status;
+    }
 
 }
