@@ -34,6 +34,6 @@ public class PedidoController {
         pedidoRepository.findAll();
         pedidoRepository.save(pedido);
         
-        return "pedido/formulario";
+        return "redirect:/home";
     }
 }
