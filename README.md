@@ -18,6 +18,7 @@ Cursos concluidos até o momento:
   <li>Persistência com JPA: Introdução ao Hibernate (Ligeramente modificado, usei PostgreSQL ao inves de H2),</li>
   <li>Java e JPA: Consultas avançadas, performance e modelos complexos (Ligeramente modificado, usei PostgreSQL ao inves de H2),</li>
   <li>Spring Data JPA: Repositórios, Consultas, Projeções e Specifications (Ligeramente modificado, usei PostgreSQL ao inves de mariaDB).</li>
+  <li>Spring MVC: crie um web app com Thymeleaf e Bootstrap (Ligeramente modificado, usei PostgreSQL ao inves de mariaDB)</li>
 </ul>  
 </br>
   
