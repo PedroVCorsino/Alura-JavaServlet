@@ -7,22 +7,18 @@
 ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-%23005C0F.svg?style=for-the-badge&logo=Thymeleaf&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
+## Descrição
 
+### Meus exercícios na formação Spring Framework da Alura.
 
-Meus exercícios na formação Spring Framework da Alura.
-
-Cursos concluidos até o momento:
-
-<ul>
-  <li>Java Servlet: Fundamentos da programação web Java,</li>
-  <li>Java Servlet: Autenticação, autorização e o padrão MVC,</li>
-  <li>Maven: Gerenciamento de dependências e build de aplicações Java,</li>
-  <li>Java e JDBC: Trabalhando com um banco de dados,</li>
-  <li>Persistência com JPA: Introdução ao Hibernate (Ligeramente modificado, usei PostgreSQL ao inves de H2),</li>
-  <li>Java e JPA: Consultas avançadas, performance e modelos complexos (Ligeramente modificado, usei PostgreSQL ao inves de H2),</li>
-  <li>Spring Data JPA: Repositórios, Consultas, Projeções e Specifications (Ligeramente modificado, usei PostgreSQL ao inves de mariaDB).</li>
-  <li>Spring MVC: crie um web app com Thymeleaf e Bootstrap (Ligeramente modificado, usei PostgreSQL ao inves de mariaDB)</li>
-</ul>  
-</br>
+#### Cursos concluidos até o momento:
+- Java Servlet: Fundamentos da programação web Java,
+- Java Servlet: Autenticação, autorização e o padrão MVC,
+- Maven: Gerenciamento de dependências e build de aplicações Java,
+- Java e JDBC: Trabalhando com um banco de dados,
+- Persistência com JPA: Introdução ao Hibernate (Ligeramente modificado, usei PostgreSQL ao inves de H2),
+- Java e JPA: Consultas avançadas, performance e modelos complexos (Ligeramente modificado, usei PostgreSQL ao inves de H2),
+- Spring Data JPA: Repositórios, Consultas, Projeções e Specifications (Ligeramente modificado, usei PostgreSQL ao inves de mariaDB),
+- Spring MVC: crie um web app com Thymeleaf e Bootstrap (Ligeramente modificado, usei PostgreSQL ao inves de mariaDB).
   
 Mais em breve...
