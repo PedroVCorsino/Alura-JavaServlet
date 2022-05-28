@@ -19,6 +19,6 @@
 - Persistência com JPA: Introdução ao Hibernate (Ligeramente modificado, usei PostgreSQL ao inves de H2),
 - Java e JPA: Consultas avançadas, performance e modelos complexos (Ligeramente modificado, usei PostgreSQL ao inves de H2),
 - Spring Data JPA: Repositórios, Consultas, Projeções e Specifications (Ligeramente modificado, usei PostgreSQL ao inves de mariaDB),
-- Spring MVC: crie um web app com Thymeleaf e Bootstrap (Ligeramente modificado, usei PostgreSQL ao inves de mariaDB).
+- [Spring MVC: crie um web app com Thymeleaf e Bootstrap (Ligeramente modificado, usei PostgreSQL ao inves de mariaDB)](https://github.com/PedroVCorsino/Mudi_Original "Go to Mudi_Original Repository").
   
 Mais em breve...
