@@ -9,7 +9,8 @@
 
 ## Descrição
 
-### Meus exercícios na formação Spring Framework da [Alura](https://www.alura.com.br/ "Go to Alura").
+Meus exercícios na formação Spring Framework da [Alura](https://www.alura.com.br/ "Go to Alura").
+
 Mais exercícios com java [aqui](https://github.com/PedroVCorsino/Alura-Java-e-Orientacao-a-Objeto "Go to Alura-Java-e-Orientacao-a-Objeto")
 #### Cursos concluidos até o momento:
 - Java Servlet: Fundamentos da programação web Java,
