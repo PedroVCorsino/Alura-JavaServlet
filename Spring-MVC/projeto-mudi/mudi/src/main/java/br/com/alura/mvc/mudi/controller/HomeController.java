@@ -4,6 +4,7 @@ import java.security.Principal;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -23,8 +24,11 @@ public class HomeController {
     private PedidoRepository pedidoRepository;
 
     @GetMapping
-    public String home(Model model) {        
-        List<Pedido> pedidos = pedidoRepository.findByStatus(StatusPedido.ENTREGUE);
+    public String home(Model model) { 
+        
+        Sort sort = Sort.by("dataDaEntrega").descending();
+        
+        List<Pedido> pedidos = pedidoRepository.findByStatus(StatusPedido.ENTREGUE, sort);
         model.addAttribute("pedidos", pedidos);
         return "home";
     }
