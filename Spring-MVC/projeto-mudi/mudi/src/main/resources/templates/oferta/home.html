@@ -21,8 +21,18 @@
                             <textarea disabled class="form-control">{{pedido.descricao}}</textarea>
                         </div>
                         <div class="row mt-3 ">
-                            <div class="col-md-5">Valor: <input class="form-control" v-model="pedido.valorNegociado" /> </div>
-                            <div class="col-md-7">Data da entrega: <input class="form-control" v-model="pedido.dataDaEntrega"/></div>
+                            <div class="col-md-5">
+                                Valor: <input v-bind:class="{'is-invalid':pedido.erros.valor !== ''}" class="form-control" v-model="pedido.valorNegociado" />
+                                <div v-if="pedido.erros.valor" class="invalid-feedback">
+                                    {{pedido.erros.valor}}
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                Data da entrega: <input v-bind:class="{'is-invalid':pedido.erros.dataDaEntrega !== ''}" class="form-control" v-model="pedido.dataDaEntrega"/>
+                                <div v-if="pedido.erros.dataDaEntrega" class="invalid-feedback">
+                                    {{pedido.erros.dataDaEntrega}}
+                                </div>
+                            </div>
                         </div>
                         <div  class="mt-2">
                             <label for="">Comentario</label>
@@ -52,13 +62,23 @@
                     axios
                         .get('http://localhost:8080/api/pedidos/aguardando')
                         .then(response => {
-                            response.data.forEach(pedido => pedido.ofertaEnviada = false);
-                            (this.pedidos = response.data)
+                            response.data.forEach(pedido => {
+                                pedido.ofertaEnviada = false;
+                                pedido.erros = {
+                                    valor: '',
+                                    dataDaEntrega: ''
+                                }
+                            })
+                            this.pedidos = response.data
                         })
                         .catch(error => console.error(error))
                 },
                 methods: {
                     enviarOferta: function(pedido) {
+                        pedido.erros = {
+                        valor: '',
+                        dataDaEntrega: ''
+                    }
                         axios
                             .post('http://localhost:8080/api/ofertas', {
                                 pedidoId: pedido.id,
@@ -67,7 +87,11 @@
                                 comentario: pedido.comentario
                             })                        
                             .then(response => pedido.ofertaEnviada = true)
-                            .catch(error => console.error(error))
+                            .catch(error => {
+                                error.response.data.errors.forEach(erro => {
+                                    pedido.erros[erro.field] = erro.defaultMessage; 
+                                })
+                            })
                     }
                 }
             });
