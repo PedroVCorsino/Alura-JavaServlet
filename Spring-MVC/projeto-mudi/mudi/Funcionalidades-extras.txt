@@ -1,0 +1,7 @@
+Na tela de cadastro de ofertas o usuario deve vizualizar apenas os pedidos de outros usuarios.
+
+Em meus pedidos criar uma tela onde o usuario possa vizualizar e aceitar ofertas de outros usuarios.
+
+Criar um formulario para que o usuario possa se cadastar no sistema.
+
+Criar uma paginação para vizualizar mais de 10 pedidos.
