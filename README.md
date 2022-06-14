@@ -6,6 +6,7 @@
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-%23005C0F.svg?style=for-the-badge&logo=Thymeleaf&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
 
 ## Descrição
 
@@ -20,6 +21,7 @@ Mais exercícios com java [aqui](https://github.com/PedroVCorsino/Alura-Java-e-O
 - Persistência com JPA: Introdução ao Hibernate (Ligeramente modificado, usei PostgreSQL ao inves de H2),
 - Java e JPA: Consultas avançadas, performance e modelos complexos (Ligeramente modificado, usei PostgreSQL ao inves de H2),
 - Spring Data JPA: Repositórios, Consultas, Projeções e Specifications (Ligeramente modificado, usei PostgreSQL ao inves de mariaDB),
-- [Spring MVC: crie um web app com Thymeleaf e Bootstrap (Ligeramente modificado, usei PostgreSQL ao inves de mariaDB)](https://github.com/PedroVCorsino/Mudi_Original "Go to Mudi_Original Repository").
-  
+- [Spring MVC: crie um web app com Thymeleaf e Bootstrap (Ligeramente modificado, usei PostgreSQL ao inves de mariaDB)](https://github.com/PedroVCorsino/Mudi_Original "Go to Mudi_Original Repository"),
+- [Spring MVC: autenticação com Spring Security, API Rest e AJAX (Ligeramente modificado, usei PostgreSQL ao inves de mariaDB)](https://github.com/PedroVCorsino/Mudi_Avancado "Go to Mudi_Avancado Repository").
+
 Mais em breve...
